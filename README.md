@@ -1,7 +1,7 @@
 # Terraform VM Forge
 <div id="top"></div>
 
-
+[![asciicast](https://asciinema.org/a/499315.svg)](https://asciinema.org/a/499315)
 
 <!-- TABLE OF CONTENTS -->
 <details open>
