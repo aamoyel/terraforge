@@ -1,0 +1,26 @@
+{
+  "k8s-cp01": {
+    "cores": "2",
+    "sockets": "1",
+    "memory": "2048",
+    "network": "vmbr1",
+    "subnet": "PRD",
+    "domain": "amoyel.loc"
+  },
+  "k8s-cp02": {
+    "cores": "2",
+    "sockets":"1",
+    "memory": "2048",
+    "network": "vmbr1",
+    "subnet": "PRD",
+    "domain": "amoyel.loc"
+  },
+  "k8s-cp03": {
+    "cores": "2",
+    "sockets":"1",
+    "memory": "2048",
+    "network": "vmbr1",
+    "subnet": "PRD",
+    "domain": "amoyel.loc"
+  }
+}
