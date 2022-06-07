@@ -75,7 +75,7 @@ After that, you need to have a cloud-init template in Proxmox and [terraform bin
 
 1. Clone the repo :
    ```sh
-   git clone https://github.com/aamoyel/terraforge
+   git clone git@github.com:aamoyel/terraforge.git && cd terraforge
    ```
 2. Configure your APIs credentials and URLs in terraform.tfvars.json.
 3. Init your terraform directory and install deps.
