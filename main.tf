@@ -121,8 +121,6 @@ resource "phpipam_first_free_address" "new_ip" {
   lifecycle {
     ignore_changes = [
       subnet_id,
-      ip_address,
-      last_seen
     ]
   }
 }
@@ -137,6 +135,7 @@ data "phpipam_address" "gateway" {
 resource "proxmox_vm_qemu" "vm" {
   for_each          = local.vm_instances
   name              = each.key
+  onboot            = true
   target_node       = "hyp-pve01"
   clone             = "tmpl-debian11"
   cores             = each.value.cores
@@ -155,6 +154,12 @@ resource "proxmox_vm_qemu" "vm" {
     storage = "VMFS2"
     type    = "scsi"
   }
+  lifecycle {
+    ignore_changes = [
+      disk
+    ]
+  }
+
   # CloudInit config
   ciuser = "root"
   cipassword = "${vault_generic_endpoint.gen_passwd[each.key].write_data.value}"
