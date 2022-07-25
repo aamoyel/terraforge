@@ -170,11 +170,10 @@ resource "proxmox_vm_qemu" "vm" {
     private_key = "${file("~/.ssh/id_rsa")}"
     host        = self.ssh_host
   }
-  # Change hostname and DNS config
+  # Change DNS config
   provisioner "remote-exec" {
     inline = [
-      "hostnamectl set-hostname ${each.key}.${each.value.domain}",
-      "echo -n '    dns-nameservers 172.16.2.254\n    dns-search amoyel.loc' >> /etc/network/interfaces.d/50-cloud-init",
+      "echo -n \"search amoyel.loc\nnameserver ${data.phpipam_address.gateway[each.key].ip_address}\" > /etc/resolv.conf",
       "shutdown -r +0"
     ]
   }

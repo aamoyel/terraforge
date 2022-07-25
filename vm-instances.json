@@ -30,5 +30,13 @@
     "network": "vmbr1",
     "subnet": "PRD",
     "domain": "amoyel.loc"
+  },
+  "k8s-wk02": {
+    "cores": "2",
+    "sockets":"2",
+    "memory": "8192",
+    "network": "vmbr1",
+    "subnet": "PRD",
+    "domain": "amoyel.loc"
   }
 }
