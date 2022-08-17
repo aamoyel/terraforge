@@ -107,7 +107,7 @@ After that, you need to have a cloud-init template in Proxmox and [terraform bin
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Apache-2.0 license. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
