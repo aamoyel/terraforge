@@ -31,7 +31,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
 This project allows you to create fresh VMs instances on Proxmox.
 Tools like Cloud-Init, HashiCorp Vault, phpIPAM and PowerDNS are integrated to automate and simplify VMs configurations. Features are:
 - Dynamic password generation for root user with Vault.
@@ -44,7 +43,6 @@ Tools like Cloud-Init, HashiCorp Vault, phpIPAM and PowerDNS are integrated to a
 
 
 ### Built With
-
 * [Proxmox](https://www.proxmox.com)
 * [Cloud-Init](https://cloud-init.io/)
 * [HashiCorp Vault](https://www.vaultproject.io/)
@@ -58,11 +56,7 @@ Tools like Cloud-Init, HashiCorp Vault, phpIPAM and PowerDNS are integrated to a
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
-
 You need to have an instance of :
 * Proxmox
 * HashiCorp Vault
@@ -72,7 +66,6 @@ You need to have an instance of :
 After that, you need to have a cloud-init template in Proxmox and [terraform binary](https://learn.hashicorp.com/tutorials/terraform/install-cli) on a PC/server.
 
 ### Installation
-
 1. Clone the repo :
    ```sh
    git clone git@github.com:aamoyel/terraforge.git && cd terraforge
@@ -89,7 +82,6 @@ After that, you need to have a cloud-init template in Proxmox and [terraform bin
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
 1. Setup your VMs in vm-instances.json, exemple here :
    ```json
     {
